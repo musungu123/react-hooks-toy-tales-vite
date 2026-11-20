@@ -1,7 +1,7 @@
 import React from "react";
 
-function ToyCard({ toy, onDeleteToy , onUpdateToy }) {
-  const { name, image, likes } = toy;
+function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
+  const { id, name, image, likes } = toy;
 
   function handleLikeClick() {
     fetch(`http://localhost:3001/toys/${id}`, {
